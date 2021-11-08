@@ -1,6 +1,8 @@
 # Project Description
 This project, is to be a copy of the work from the learn laravel 8 from scratch series, I intend to use this as a reference for future work. 
 
+Video reference https://laracasts.com/series/laravel-8-from-scratch/
+
 # Setup 
 To get this project set up you will need the following:
 
