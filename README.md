@@ -6,6 +6,7 @@ To get this project set up you will need the following:
 
 - PHP installed globally on your machine
 - Composer installed globally on your machine
+- Oracle Virtual Machine
 
 You can follow the setup for a homestead box here https://laravel.com/docs/8.x/homestead#per-project-installation 
 
