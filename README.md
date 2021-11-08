@@ -7,8 +7,27 @@ To get this project set up you will need the following:
 - PHP installed globally on your machine
 - Composer installed globally on your machine
 
+You can follow the setup for a homestead box here https://laravel.com/docs/8.x/homestead#per-project-installation 
+
+Install the package:
+
+`composer require laravel/homestead --dev`
+
+Use the make command:
+
+```
+// macOS / Linux...
+php vendor/bin/homestead make
+
+// Windows...
+vendor\\bin\\homestead make
+```
+
 # To Run
-To run this project run the command php artisan serve 
+To run this project run the command: `vagrant up`
+
+Your vagrant box should now be running with access here:
+`http://homestead.test`
 
 ## Security Vulnerabilities
 
