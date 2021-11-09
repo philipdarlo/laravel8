@@ -32,6 +32,13 @@ To run this project run the command: `vagrant up`
 Your vagrant box should now be running with access here:
 `http://homestead.test`
 
+# Once running
+ssh into the server using `vagrant ssh`
+
+Then CD to the code directory
+
+Then run `php artisan migrate --seed`
+
 ## Security Vulnerabilities
 
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
