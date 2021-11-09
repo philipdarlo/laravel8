@@ -20,6 +20,12 @@ class Post extends Model
                 ->where('title', 'like', '%' . request('search') .'%')
                 ->orwhere('body', 'like', '%' . request('search') .'%');
         }
+
+        if(isset($filters['category'])){
+            $query->whereHas('category', function($query) use ($filters){
+                $query->where('slug', $filters['category']);
+            });
+        }
     }
 
     public function category()
