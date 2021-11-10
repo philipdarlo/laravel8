@@ -39,6 +39,9 @@ Then CD to the code directory
 
 Then run `php artisan migrate --seed`
 
+# Side points
+Laravel breeze is a really quick way to do authentication out of the box!
+
 ## Security Vulnerabilities
 
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
