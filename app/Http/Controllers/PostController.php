@@ -11,7 +11,8 @@ class PostController extends Controller
     public function index()
     {
         return view('posts.index', [
-            'posts' => Post::latest('published_at')->filter(request(['search', 'category', 'author']))->get(),
+            //Could use simplePaginate here which just gives next and previous
+            'posts' => Post::latest('published_at')->filter(request(['search', 'category', 'author']))->paginate(6)->withQueryString(),
             'currentCategory' => Category::firstWhere('slug', \request('category'))
         ]);
     }
