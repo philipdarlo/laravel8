@@ -12,7 +12,7 @@ class PostController extends Controller
     {
         return view('posts.index', [
             //Could use simplePaginate here which just gives next and previous
-            'posts' => Post::latest('published_at')->filter(request(['search', 'category', 'author']))->paginate(6)->withQueryString(),
+            'posts' => Post::latest('created_at')->filter(request(['search', 'category', 'author']))->paginate(6)->withQueryString(),
             'currentCategory' => Category::firstWhere('slug', \request('category'))
         ]);
     }
